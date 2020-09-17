@@ -90,7 +90,7 @@ server <- function(input, output) {
 
     output$table <- renderReactable({
 
-        data <- games_list("Rawg-demo", search=input$term)
+        data <- games_list("https://rabiibouhestine.shinyapps.io/rawg-demo/", search=input$term)
 
         data <- data[c("background_image", "name", "released", "rating", "metacritic")]
 
